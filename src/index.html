@@ -3,63 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP 01</title>
+    <title>Proyecto Lenguajes III</title>
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50 text-gray-900">
 
     <header class="bg-gray-100 shadow-sm text-lg font-semibold h-20">
-
+      <h1 class="absolute text-gray-600 text-sm top-1 left-1">Lenguajes III - Trabajo Práctico: Página estática con HTML5 + CSS + TailwindCSS</h1>
       <div class="w-full h-full snap-x snap-mandatory overflow-x-auto flex scroll-smooth hide-scrollbar">
-
         <div id="slide1" class="w-full shrink-0 snap-center flex justify-center items-center gap-10">
           <a href="#slide3" class="p-2 hover:bg-gray-200 rounded"> <i class="fa-solid fa-chevron-left"></i> </a>
-          <img src="../public/html.png" alt="ícono html" class="h-20 grayscale">
+          <img src="../public/html.png" alt="ícono html" class="h-12 grayscale hover:grayscale-0 transition-all">
           <a href="#slide2" class="p-2 hover:bg-gray-200 rounded"> <i class="fa-solid fa-chevron-right"></i> </a>
         </div>
-        
         <div id="slide2" class="w-full shrink-0 snap-center flex justify-center items-center gap-10">
           <a href="#slide1" class="p-2 hover:bg-gray-200 rounded"> <i class="fa-solid fa-chevron-left"></i> </a>
-          <img src="../public/css.png" alt="ícono html" class="h-20 grayscale">
+          <img src="../public/css.png" alt="ícono css" class="h-12 grayscale hover:grayscale-0 transition-all">
           <a href="#slide3" class="p-2 hover:bg-gray-200 rounded"> <i class="fa-solid fa-chevron-right"></i> </a>
         </div>
-
         <div id="slide3" class="w-full shrink-0 snap-center flex justify-center items-center gap-10">
           <a href="#slide2" class="p-2 hover:bg-gray-200 rounded"> <i class="fa-solid fa-chevron-left"></i> </a>
-          <img src="../public/tw.png" alt="ícono html" class="h-20 grayscale">
+          <img src="../public/tw.png" alt="ícono tailwind" class="h-12 grayscale hover:grayscale-0 transition-all">
           <a href="#slide1" class="p-2 hover:bg-gray-200 rounded"> <i class="fa-solid fa-chevron-right"></i> </a>
         </div>
-        
       </div>
-
       <style>
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
       </style>
     </header>
 
-    <main class="flex-grow flex flex-col items-center justify-center p-6 md:p-12">
+    <main class="flex-grow flex flex-col items-center p-6 md:p-12">
         
-        <div class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-950 tracking-tight">Lenguajes III</h1>
-            <p class="text-lg text-gray-600 mt-3 max-w-2xl">Este es mi proyecto en HTML5 + CSS + TAILWINDCSS</p>
+        <div class="text-center mb-10">
+            <p class="text-lg text-gray-600 mt-3 max-w-2xl">Noticias de Ajedrez & Desarrollo</p>
         </div>
 
-        <button class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 group text-center hover:cursor-pointer">
-            <i class="fa-solid fa-code text-3xl"></i>
-        </button>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full mb-12">
+            <article class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+                <div class="h-40 bg-gray-200 flex items-center justify-center text-gray-400">
+                    <i class="fa-solid fa-chess-knight text-5xl"></i>
+                </div>
+                <div class="p-5">
+                    <span class="text-xs font-bold text-green-600 uppercase tracking-widest">Torneos</span>
+                    <h3 class="text-xl font-bold mt-2">Candidatos 2026: La lucha por el título</h3>
+                    <p class="text-gray-600 mt-2 text-sm text-pretty">Los mejores grandes maestros del mundo se enfrentan para decidir quién retará al campeón mundial.</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+                <div class="h-40 bg-gray-200 flex items-center justify-center text-gray-400">
+                    <i class="fa-solid fa-microchip text-5xl"></i>
+                </div>
+                <div class="p-5">
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Tecnología</span>
+                    <h3 class="text-xl font-bold mt-2">Nuevos motores de IA en Chess.com</h3>
+                    <p class="text-gray-600 mt-2 text-sm text-pretty">La integración de redes neuronales de última generación redefine el análisis de partidas online.</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+                <div class="h-40 bg-gray-200 flex items-center justify-center text-gray-400">
+                    <i class="fa-solid fa-trophy text-5xl"></i>
+                </div>
+                <div class="p-5">
+                    <span class="text-xs font-bold text-orange-600 uppercase tracking-widest">Eventos</span>
+                    <h3 class="text-xl font-bold mt-2">Speed Chess Championship 2026</h3>
+                    <p class="text-gray-600 mt-2 text-sm text-pretty">Las partidas a ritmo relámpago vuelven a dominar la escena competitiva global este mes.</p>
+                </div>
+            </article>
+        </section>
         
     </main>
 
-    <footer class="flex items-center justify-center bg-gray-800 h-20 text-white">
-        <a href="#" class="hover:text-blue-600 transition-transform hover:scale-110 flex gap-3 items-center">
+    <footer class="flex flex-col items-center justify-center bg-gray-800 py-6 text-white gap-2">
+        <a href="#" class="hover:text-blue-400 transition-transform hover:scale-110 flex gap-3 items-center">
             <i class="fa-brands fa-linkedin text-3xl"></i>
             <div>
-                <strong>Lautaro Jándula</p>
-                <p class="text-sm font-thin">2026</p>
+                <p class="font-bold leading-tight">Lautaro Jándula</p>
+                <p class="text-sm font-thin opacity-80">2026</p>
             </div>
         </a>
+        <p class="text-[10px] text-gray-400 mt-2 italic">
+            Fuente de noticias: <a href="https://www.chess.com/news" target="_blank" class="underline hover:text-gray-200">Chess.com/news</a>
+        </p>
     </footer>
 
 </body>
