@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 01</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-900">
+
+    <header class="bg-gray-100 shadow-sm text-lg font-semibold h-20">
+
+      <div class="w-full h-full snap-x snap-mandatory overflow-x-auto flex scroll-smooth hide-scrollbar">
+
+        <div id="slide1" class="w-full shrink-0 snap-center flex justify-center items-center gap-10">
+          <a href="#slide3" class="p-2 hover:bg-gray-200 rounded"> <i class="fa-solid fa-chevron-left"></i> </a>
+          <img src="../public/html.png" alt="ícono html" class="h-20 grayscale">
+          <a href="#slide2" class="p-2 hover:bg-gray-200 rounded"> <i class="fa-solid fa-chevron-right"></i> </a>
+        </div>
+        
+        <div id="slide2" class="w-full shrink-0 snap-center flex justify-center items-center gap-10">
+          <a href="#slide1" class="p-2 hover:bg-gray-200 rounded"> <i class="fa-solid fa-chevron-left"></i> </a>
+          <img src="../public/css.png" alt="ícono html" class="h-20 grayscale">
+          <a href="#slide3" class="p-2 hover:bg-gray-200 rounded"> <i class="fa-solid fa-chevron-right"></i> </a>
+        </div>
+
+        <div id="slide3" class="w-full shrink-0 snap-center flex justify-center items-center gap-10">
+          <a href="#slide2" class="p-2 hover:bg-gray-200 rounded"> <i class="fa-solid fa-chevron-left"></i> </a>
+          <img src="../public/tw.png" alt="ícono html" class="h-20 grayscale">
+          <a href="#slide1" class="p-2 hover:bg-gray-200 rounded"> <i class="fa-solid fa-chevron-right"></i> </a>
+        </div>
+        
+      </div>
+
+      <style>
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      </style>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center justify-center p-6 md:p-12">
+        
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-950 tracking-tight">Lenguajes III</h1>
+            <p class="text-lg text-gray-600 mt-3 max-w-2xl">Este es mi proyecto en HTML5 + CSS + TAILWINDCSS</p>
+        </div>
+
+        <button class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 group text-center hover:cursor-pointer">
+            <i class="fa-solid fa-code text-3xl"></i>
+        </button>
+        
+    </main>
+
+    <footer class="flex items-center justify-center bg-gray-800 h-20 text-white">
+        <a href="#" class="hover:text-blue-600 transition-transform hover:scale-110 flex gap-3 items-center">
+            <i class="fa-brands fa-linkedin text-3xl"></i>
+            <div>
+                <strong>Lautaro Jándula</p>
+                <p class="text-sm font-thin">2026</p>
+            </div>
+        </a>
+    </footer>
+
+</body>
+</html>
